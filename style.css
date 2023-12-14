@@ -1,0 +1,148 @@
+/* Container */
+.container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-family: 'Montserrat', sans-serif;
+    /* font-weight: ; */
+    margin-top: 50px;
+}
+
+.container img {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 7px;
+}
+
+/* Inside Container */
+.dummy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    /* border: 1px solid grey; */
+    position: relative;
+    /* add shadow effect */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* make a light black background for dummy class*/
+.dummy::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    opacity: .1;
+    background: rgb(0, 0, 0);
+}
+
+
+button {
+    display: inline;
+}
+
+.s_keeper {
+    margin-top: 10px;
+    margin: 10px 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+    width: 95%;
+    font-size: 12px;
+}
+
+.scores {
+    margin: 5px 10px;
+    font-size: 30px;
+}
+
+/* Select ELEMENT */
+.n_times {
+    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+/* Style the label */
+.n_times label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Style the label */
+.n_times label {
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    /* Add some space between label and select */
+    font-weight: bold;
+}
+
+/* Style the select dropdown */
+.n_times select {
+    display: inline-block;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+/* Style the dropdown arrow */
+.n_times select::after {
+    content: '\25BC';
+    /* Unicode character for down arrow */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+/* Style option elements */
+.n_times select option {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Style selected option */
+.n_times select option:checked {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.winner {
+    color: green;
+}
+.looser {
+    color: red;
+}
+
+/* Buttons */
+.btn {
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 2px;
+    border: none;
+    background: linear-gradient(to bottom, #00adef, #0069d9);
+    border-radius: 15px;
+}
+.playerTwoBtn {
+    /* make a green gradient background */
+    background: linear-gradient(to bottom, #2ecc71, #2cbb68);
+}
+.reset {
+    /* make a gradient bg of red */
+    background: linear-gradient(to bottom, #f38e12, #f06595);
+}
